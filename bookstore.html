@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+      <!-- Styles -->
+
+ 
+
+    <style>
+
+ 
+
+/*  Styles for books */ 
+
+      .book-list { 
+        
+        width: 95%; 
+        
+        height: 60vh; 
+        
+        margin: 0 auto; 
+        
+        display: grid; 
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+        
+        overflow: hidden;
+        
+        overflow-x: scroll;
+      }
+
+ 
+
+      .featured_book_card { 
+        
+        width: 250px;
+        
+        height: 420px;
+        
+        text-align: center;
+        
+        padding: 5px;
+        
+        border: 1px solid #919191;
+        
+        margin: auto 20px;
+      }
+
+ 
+
+      .featured_book_card:hover {
+        
+        box-shadow: 0 0 5px #e4a135;
+      
+      } 
+
+ 
+
+      .book_img img { width: 150px;}
+
+  
+
+      .featured_book_tag h2 { 
+        
+        margin: 8px;
+
+        color: peru; 
+
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Change font family */
+
+        font-size: 15px; /* Adjust font size */
+      
+      }
+
+ 
+
+      .featured_book_tag .writer { 
+        color: #ffffff;
+        font-style: italic; /* changeable style */
+      }
+
+ 
+
+      .categories { color: #ffffff; margin-top: 8px;}
+
+ 
+
+      .book_price { 
+        
+        margin-top: 8px;
+        
+        font-weight: bold;
+        
+        margin-bottom: 15px;
+
+        color:  #e4a135; /* Change to desired color */
+      
+      }
+
+  
+
+ 
+
+      .book_price sub {
+
+        font-weight: bold;
+        
+        padding: 0 5px;
+
+        color: #fdfdfd; /* Change to desired color */
+      
+      }
+
+   
+
+ 
+
+      .f_btn { 
+
+        background-color: #e4a135; /* Button background color */ 
+        
+        color: #ffffff; /* Button text color */
+        
+        padding: 8px 20px;
+        
+        border: none;
+
+        font-size: 16px; /* Adjust font size */ 
+
+        transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+      
+      }
+
+      .f_btn:hover {
+
+        background-color: #e4a135; /* Darker shade on hover */
+
+        color: #ffe; /* Change text color on hover if needed */
+
+      }
+
+  
+
+    
+
+    </style>
+
+ 
+
+   <!-- Website title -->
+
+ 
+
+<title> Bookshop </title>  
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+
+   <!-- Links to External sheets -->
+
+ 
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+ 
+
+    <!-- view 1 -->
+
+    <div class = view1 style=" height:100vh; width:100%;">
+
+       
+
+            <nav>
+
+              <div class="logo">
+                <!--<h1 style="color: #fff; font-size: 12px;">Les Mots Magiques</h1>-->
+                <img src="Logo2.png" alt="les mots magiques" width="50" height="50" style="position: absolute; left: 13px; top: -8px;">
+        
+            
+                  
+
+                <image >
+
+                    <source src="coverimg.jpg">
+
+                </image>
+
+               </div>
+
+              
+
+                  <!-- Search input-->
+
+               <input type="text" name="search" placeholder="Search..">
+
+ 
+
+                <ul>
+
+                 <li><a href="#Our Books" class="menu">Books</a></li>
+
+               
+
+                 <li><a href="#"> <button id="btn1"><i class="fa-solid fa-heart"></i></button></a></li>
+
+                 <li><a href="#"><button id="btn2"><i class="fa-solid fa-cart-shopping"></i></button></a></li>
+
+                </ul>
+
+            </nav>
+
+             <!-- Header -->
+
+            <header>
+
+                <div class="hero-text">
+
+                    <h1  style=" font-size: 45px; color: #e4a135; "> Welcome to Les Mots Magiques, Where words come to Life!</h1>
+
+                    <p> We are dedicated to providing a magical reading experience with our diverse collection
+
+                        of books. Explore various genres including fiction, non-fiction, fantasy, mystery, and
+
+                        more. Whether you're a passionate reader or just getting started, there's something for
+
+                        everyone here. Dive into fascinating stories, embark on thrilling adventures, and let
+
+                        your imagination soar! </p>
+
+                    <a href="#books-section" class="button" onclick="smoothScrollToBooks()">Learn more</a>
+
+ 
+
+                   
+
+                </div>
+
+            </header>
+
+        </div>
+
+    </div> 
+
+    
+
+ 
+
+   <!-- View 2-->
+
+ 
+
+    <div class = view2>
+
+        <div class="video-background">
+
+            <video autoplay muted loop>
+
+                <source src="libraryloop.mp4" type="video/mp4">
+
+             </video>
+
+                                  
+
+                   <!-- Your books section content goes here -->
+
+                   <div class="featured_books">
+
+                      <h1> Featured Books</h1>
+
+                       <div class="book-list">
+
+                           <!-- Featured books cards -->
+
+                                                                                                 
+
+                           <div class="featured_book_card">               
+
+                               <div class="book_img">
+
+                                 <img src="habits.jpg" >
+
+                               </div>
+
+   
+
+    
+
+                               <div class="featured_book_tag">
+
+                                   <h2>Atomic Habits</h2>
+
+                                   <p class="writer">James Clear</p>
+
+                                   <div class="categories"> Self Help</div>
+
+                                   <p class="book_price">$30.25<sub><del>$42.60</del></sub></p>
+
+                                   <a href="#" class="f_btn">Learn more</a>
+
+                           </div>
+
+                           </div>
+
+ 
+
+                              <div class="featured_book_card">               
+
+                               <div class="book_img">
+
+                                 <img src="pride.jpg" >
+
+                               </div>
+
+   
+
+    
+
+                               <div class="featured_book_tag">
+
+                                   <h2>Pride and Prejudice</h2>
+
+                                   <p class="writer">Jane Austen</p>
+
+                                   <div class="categories">Romance</div>
+
+                                   <p class="book_price">$30.25<sub><del>$42.60</del></sub></p>
+
+                                   <a href="#" class="f_btn">Learn more</a>
+
+                           </div>
+
+                           </div>
+
+                                    
+
+                                      
+
+                                <div class="featured_book_card">
+
+                   
+
+                               <div class="book_img">
+
+                                 <img src="gonegirl.jpg" >
+
+                               </div>
+
+     
+
+                               <div class="featured_book_tag">
+
+                                   <h2>Gone Girl</h2>
+
+                                   <p class="writer">Gillian Flynn</p>
+
+                                   <div class="categories">Suspense</div>
+
+                                   <p class="book_price">$25.25<sub><del>$30.60</del></sub></p>
+
+                                   <a href="#" class="f_btn">Learn more</a>
+
+                           </div>
+
+                           </div>                                                                       
+
+                        
+
+                                <div class="featured_book_card">
+
+                   
+
+                               <div class="book_img">
+
+                                 <img src="angel.jpg" >
+
+                               </div>
+
+     
+
+                               <div class="featured_book_tag">
+
+                                   <h2>Face Of An Angel</h2>
+
+                                   <p class="writer">Dorothy Eden</p>
+
+                                   <div class="categories">Fiction</div>
+
+                                   <p class="book_price">$25.25<sub><del>$30.60</del></sub></p>
+
+                                   <a href="#" class="f_btn">Learn more</a>
+
+                           </div>
+
+                           </div>
+
+                                                                                                  
+
+                          <div class="featured_book_card">
+
+                   
+
+                               <div class="book_img">
+
+                                 <img src="dolly.jpg" >
+
+                               </div>
+
+     
+
+                               <div class="featured_book_tag">
+
+                                   <h2>Everything I know About Love</h2>
+
+                                   <p class="writer">Dolly Alderton</p>
+
+                                   <div class="categories">Non-fiction</div>
+
+                                   <p class="book_price">$25.25<sub><del>$30.60</del></sub></p>
+
+                                   <a href="#" class="f_btn">Learn more</a>
+
+                           </div>
+
+                           </div>
+
+                                                                                                 
+
+                             <div class="featured_book_card">
+
+                   
+
+                               <div class="book_img">
+
+                                 <img src="employee.jpg" >
+
+                               </div>
+
+     
+
+                               <div class="featured_book_tag">
+
+                                   <h2>The Employee</h2>
+
+                                   <p class="writer">Olga Ravn</p>
+
+                                   <div class="categories">Science Fiction</div>
+
+                                   <p class="book_price">$25.25<sub><del>$30.60</del></sub></p>
+
+                                   <a href="#" class="f_btn">Learn more</a>
+
+                           </div>
+
+                           </div>
+
+                                                                                                 
+
+                             <div class="featured_book_card">
+
+                   
+
+                               <div class="book_img">
+
+                                 <img src="air.jpeg" >
+
+                               </div>
+
+     
+
+                               <div class="featured_book_tag">
+
+                                   <h2>When Breath Becomes Air</h2>
+
+                                   <p class="writer">Paul Kalanithi</p>
+
+                                   <div class="categories">Non-fiction</div>
+
+                                   <p class="book_price">$25.25<sub><del>$30.60</del></sub></p>
+
+                                   <a href="#" class="f_btn">Learn more</a>
+
+                           </div>
+
+                           </div>
+
+                           <span div class="arrow2">&#8690;</span>                                                                  
+
+               </div>
+
+            </div>
+
+         </div>
+
+       </div>
+
+    </div> 
+
+  </div>
+
+</div>
+
+ 
+
+   <!-- View 3 -->
+
+ 
+
+    <div class = view3>
+
+        <div class="bg-img">
+
+            <form action="/action_page.php" class="box">
+
+              <h1>Login Form</h1>
+
+         
+
+              <label for="email"><b>Email</b></label>
+
+              <input type="text" placeholder="Enter Email" name="email" required>
+
+         
+
+              <label for="psw"><b>Password</b></label>
+
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+         
+
+              <button type="submit" class="btn">Login</button>
+
+            </form>
+
+          </div>
+
+         
+
+ 
+
+             <!-- Opening Times table
+
+     <div class="container">
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Day</th>
+
+                            <th>Opening Time</th>
+
+                            <th>Closing Time</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Monday</td>
+
+                            <td>08:00 AM</td>
+
+                            <td>22:00 PM</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Tuesday</td>
+
+                            <td>08:00 AM</td>
+
+                            <td>22:00 PM</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Wednesday</td>
+
+                            <td>08:00 AM</td>
+
+                            <td>21:30 PM</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Thursday</td>
+
+                            <td>08:00 AM</td>
+
+                            <td>22:00 PM</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Friday</td>
+
+                            <td>09:00 AM</td>
+
+                            <td>21:00 PM</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Saturday</td>
+
+                            <td>10:00 AM</td>
+
+                            <td>20:00 PM</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Sunday</td>
+
+                            <td>CLOSED</td>
+
+                            <td>CLOSED</td>
+
+                        </tr>
+
+              
+
+                    </tbody>
+
+                </table>
+
+           </div> -->
+
+        <div class="table-container">  
+
+           <table>
+
+            <thead>
+
+              <tr class="tabletitle">
+
+                <th>Days</th>
+
+                <th>Opening Times</th>
+
+                <th>Closing Times</th>
+
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <tr class="mon">
+
+                <td><a href="#">Monday</a><span class="description">This Mystery Monday will be about discovering about our local mystery authors. Make sure to register for the event!</span></td>
+
+                <td>08:00 am</td>
+
+                <td>17:00 pm</td>
+
+              </tr>
+
+              <tr class="tues"> 
+
+                <td><a href="#">Tuesday</a><span class="description">The winner for this week's Trivia Tuesday will get a 50% discount!</span></td>
+
+                <td>08:00 am</td>
+
+                <td>18:00 pm</td>
+
+              </tr>
+
+              <tr class="wed">
+
+                <td><a href="#">Wednesday</a><span class="description">We will have a pottery session this wednesday. Contact us for more details!</span></td>
+
+                <td>08:00 am</td>
+
+                <td>18:00 pm</td>
+
+              </tr>
+
+              <tr class="thurs">
+
+                <td><a href="#">Thursday</a><span class="description">Announcement of winners from last week's drawing competition</span></td>
+
+                <td>08:00 am</td>
+
+                <td>18:00 pm</td>
+
+              </tr> 
+
+              <tr class="fri">
+
+                <td><a href="#">Friday</a><span class="description">We have La Rosa Bookshop joining us this friday for a reading session!</span></td>
+
+                <td>08:00 am</td>
+
+                <td>18:00 pm</td>
+
+              </tr>
+
+              <tr class="sat">
+
+                <td><a href="#">Saturday</a><span class="description">Come and participate in our spelling bee competition to get a chance to win Rs 10 000 ! </span></td>
+
+                <td>08:00 am</td>
+
+                <td>18:00 pm</td>
+
+              </tr>
+
+              <tr class="sun">
+
+                <td><a href="#">Sunday</a><span class="description">We are close this sunday due to the public holiday!Contact us for any enquiries</span></td>
+
+                <td>08:00 am</td>
+
+                <td>18:00 pm</td>
+
+
+            </tbody>
+
+          </table>
+
+        </div> 
+
+
+
+
+
+
+
+        <!-- Footer -->
+
+ 
+
+        <footer>
+
+            <div class="footer_main">
+
+                <div class="tag">
+
+                    <h1 style="font-size: 20px;color: #d78f1c; " > Links</h1>
+
+                    <a href="#">Home</a>
+
+                    <a href="#">Our Books</a>
+
+                    <a href="#">Books</a>
+
+                    <a href="#">Contact</a>
+
+                </div>
+
+ 
+
+                   <!-- Contact info -->
+
+                <div class="tag">
+
+                    <!--<h1> Contact Info</h1> -->
+
+                    <h1 style="font-size: 20px;color: #d78f1c; " > Contact Info</h1>
+
+                    <a href="#"><i class="fa-solid fa-phone"></i>+230 5687 3498</a>
+
+                    <a href="#"><i class="fa-solid fa-envelope"></i>lesmotsmagiques@gmail.com</a>
+
+                </div>
+
+                <div class="tag">
+
+                    <!--<h1> Follow us</h1>-->
+
+                    <h1 style="font-size: 20px;color: #d78f1c; " > Follow us</h1>
+
+                    <div class="social_link">
+
+                        <a href=https://www.facebook.com/><i class="fab fa-facebook-square"></i></a>
+
+                        <a href=https://www.instagram.com/><i class="fab fa-instagram"></i></a>
+
+                        <a href=https://twitter.com/><i class="fab fa-twitter"></i></a>
+
+                    </div>                   
+
+                </div>
+
+            </div>
+
+            <div class="bottompg">
+
+                <p>© 2024 Les Mots Magiques.</p>
+
+            </div>
+
+        </footer>
+
+    </div> 
+
+ 
+
+   <!--  link to external sheet-->
+
+ 
+
+<script src="script.js"  defer></script>
+
+</body>
+
+</html>
+
+ 
+
+ 
