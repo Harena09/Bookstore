@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE BookList SYSTEM "BookList.dtd" [
+    <!-- Internal DTD subset for entity declaration -->
+    <!ENTITY publisherInfo "For more information, visit the author's website.">
+]>
+<?xml-stylesheet type="text/xsl" href="design.xsl"?>
+<BookList xmlns="http://www.example.com/booklist" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <Book>
+        <Title>Introduction to Algorithms</Title> <!-- The title of the book -->
+        <Author>Thomas H. Cormen et al.</Author> <!-- The author(s) of the book -->
+        <ISBN>978-0262033848</ISBN> <!-- ISBN number of the book -->
+        <PublicationYear>
+		   <Year>2009</Year>
+		   <Date>10/06 </Date>
+		</PublicationYear>
+        <Genre>Education</Genre>
+		<BestSeller>false</BestSeller> <!-- Indicates if the book is a bestseller -->
+        <Price>$450.25</Price> <!-- Price of the book -->
+        <Image>https://m.media-amazon.com/images/I/61Pgdn8Ys-L._AC_UF1000,1000_QL80_.jpg</Image>
+       <Description>Introduction to Algorithms uniquely combines rigor and comprehensiveness. It covers a broad range of algorithms in depth, yet makes their design and analysis accessible to all levels of readers, with self-contained chapters and algorithms in pseudocode. &publisherInfo; </Description> 
+    </Book>
+
+    <!-- Additional <Book> elements would follow the same pattern -->
+    <Book>
+        <Title>365 Days</Title>
+        <Author>Blanka Lipinska</Author>
+        <ISBN>978-0262033848</ISBN>
+        <PublicationYear>
+		   	<Year>2018</Year>
+		    <Date>04/07</Date>
+		</PublicationYear>
+        <Genre>Literature</Genre>
+		<BestSeller>true</BestSeller>
+        <Price>$10.00</Price>         <Image>https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982174309/365-days-9781982174309_hr.jpg</Image>
+      <Description>The first book in the trilogy, 365 Days, is a story of Laura's captivity, where she struggles to come to terms with her situation and her growing feelings for Massimo. The novel is full of explicit sex scenes, violence, and intrigue that will keep readers hooked until the end.</Description>  
+
+    </Book>
+
+    <Book>
+        <Title>Atomic Habits</Title>
+        <Author>James Clear</Author>
+        <ISBN>978-0262033848</ISBN>
+        <PublicationYear>
+		   <Year>2018</Year>
+		   <Date>16/10</Date>
+		</PublicationYear>
+        <Genre>Education</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$30.25</Price>
+        <Image>https://m.media-amazon.com/images/I/81YkqyaFVEL._AC_UF1000,1000_QL80_.jpg</Image>
+        <Description>Atomic Habits by James Clear is a comprehensive, practical guide on how to change your habits and get 1% better every day. Using a framework called the Four Laws of Behavior Change, Atomic Habits teaches readers a simple set of rules for creating good habits and breaking bad ones.</Description>
+
+    </Book>
+
+    <Book>
+        <Title>Pride and Prejudice</Title>
+        <Author>Jane Austen</Author>
+        <ISBN>978-0140430721</ISBN>
+        <PublicationYear>
+		   <Year>28/01</Year>
+		   <Date>1813</Date>
+		</PublicationYear>
+        <Genre>Romance</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$30.25</Price>
+        <Image>https://images.penguinrandomhouse.com/cover/9780593622452</Image>
+       <Description>Pride and Prejudice follows the turbulent relationship between Elizabeth Bennet, the daughter of a country gentleman, and Fitzwilliam Darcy, a rich aristocratic landowner. They must overcome the titular sins of pride and prejudice in order to fall in love and marry.</Description>
+    </Book>
+
+    <Book>
+        <Title>When Breath Becomes Air</Title>
+        <Author>Paul Kalanithi</Author>
+        <ISBN>978-0812988406</ISBN>
+        <PublicationYear>
+		   <Year>12/01</Year>
+		   <Date>2016</Date>
+		</PublicationYear>
+        <Genre>Non-fiction</Genre>
+		<BestSeller>true</BestSeller>
+        <Price>$30.60</Price>
+        
+        <Image>https://m.media-amazon.com/images/I/91iZ2ZQduBL._AC_UF894,1000_QL80_.jpg</Image>
+        <Description>When Breath Becomes Air by Paul Kalanithi is a memoir that follows a neurosurgeon's journey upon receiving a terminal cancer diagnosis. It offers a touching and insightful reflection on life, death, and the importance of finding meaning in one's limited time.</Description>
+
+    </Book>
+
+    <Book>
+        <Title>Twilight(Book Set)</Title>
+        <Author>Stephenie Meyer</Author>
+        <ISBN>978-1415634844</ISBN>
+        <PublicationYear>
+		   <Year>2005-2020</Year>
+		   <Date></Date>
+		</PublicationYear>
+        <Genre>Romance, Young Adult</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$300.60</Price>
+       
+        <Image>https://m.media-amazon.com/images/I/61dj8UY9g1L._AC_UF1000,1000_QL80_.jpg</Image>
+        <Description>Twilight, by Stephenie Meyer, is a young adult adventure-romance about a teenage girl who falls in love with a vampire. Her struggle to build a relationship in a world filled with suspicion and danger helped make the book a number-one New York Times bestseller.</Description>
+    </Book>    
+
+    <Book>
+        <Title>Palestine</Title>
+        <Author>Joe Sacco </Author>
+        <ISBN>978-1415634844</ISBN>
+        <PublicationYear>
+		   <Year>1993</Year>
+		   <Date></Date>
+		</PublicationYear>
+        <Genre>Non-fiction</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$350.60</Price>
+       
+        <Image>https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1569917057i/769712.jpg</Image>
+        <Description>Palestine is a non-fiction graphic novel written and drawn by Joe Sacco about his experiences in the West Bank and the Gaza Strip in December 1991 and January 1992. Sacco's portrayal of the situation emphasizes the history and plight of the Palestinian people, as a group and as individuals.</Description>
+    </Book>    
+ 
+    <Book>
+        <Title>White Noise</Title>
+        <Author>Don Dellilo</Author>
+        <ISBN>786-1415634800</ISBN>
+        <PublicationYear>
+		   <Year>1985</Year>
+		   <Date>21/01</Date>
+		</PublicationYear>
+        <Genre>Literature</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$456.60</Price>
+       
+        <Image>https://ik.imagekit.io/panmac/tr:f-auto,di-placeholder_portrait_aMjPtD9YZ.jpg,w-171/edition/9781529077261.jpg</Image>
+        <Description>White Noise is the eighth novel by Don DeLillo, published by Viking Press in 1985. It won the U.S. National Book Award for Fiction. White Noise is a cornerstone example of postmodern literature. It is widely considered DeLillo's breakout work and brought him to the attention of a much larger audience.</Description>
+    </Book>    
+    
+    <Book>
+        <Title>This is Going to Hurt</Title>
+        <Author>Adam Kay</Author>
+        <ISBN>9781529062335</ISBN>
+        <PublicationYear>
+		   <Year>2022</Year>
+		   <Date>03/02</Date>
+		</PublicationYear>
+        <Genre>Humor</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$458.60</Price>
+       
+        <Image>https://ik.imagekit.io/panmac/tr:f-auto,di-placeholder_portrait_aMjPtD9YZ.jpg,w-270/edition/9781529062335.jpg</Image>
+        <Description>This is Going to Hurt: Secret Diaries of a Junior Doctor is a nonfiction book by the British comedy writer Adam Kay, published in 2017 by Picador. It is a collection of diary entries written by Kay during his medical training from 2004 to 2010.</Description>
+    </Book>    
+
+     <Book>
+        <Title>If only I had told her</Title>
+        <Author>Laura Nowlin</Author>
+        <ISBN>9781529062335</ISBN>
+        <PublicationYear>
+		   <Year>2024</Year>
+		   <Date>06/02</Date>
+		</PublicationYear>
+        <Genre>Young adult</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$230.60</Price>
+       
+        <Image>https://m.media-amazon.com/images/I/81uMF1t16LL._SY466_.jpg</Image>
+        <Description>An intensely emotional and gripping companion novel to Laura Nowlin's USA Today and New York Times Bestselling novel If He Had Been With Me about the love that both breaks and heals us.</Description>
+    </Book>    
+
+     <Book>
+        <Title>If He Had Been with Me</Title>
+        <Author>Laura Nowlin</Author>
+        <ISBN>9781529062335</ISBN>
+        <PublicationYear>
+		   <Year>2019</Year>
+		   <Date>06/11</Date>
+		</PublicationYear>
+        <Genre>Young adult</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$235.60</Price>
+       
+        <Image>https://m.media-amazon.com/images/I/61tdwW3Nm8L._SY466_.jpg</Image>
+        <Description>A heartrending tale of missed chances and what might have been If he had been with me, everything would be different. For one thing, Finn wouldn't have been in that car, on that road, on that night.</Description>
+    </Book>   
+    
+     <Book>
+        <Title>Empire of the Vampire</Title>
+        <Author>Jay Kristoff</Author>
+        <ISBN>978-0262033848</ISBN>
+        <PublicationYear>
+		  <Year>2009</Year>
+		   <Date>06/11</Date>
+		</PublicationYear>
+        <Genre>Literature</Genre>
+		<BestSeller>true</BestSeller>
+        <Price>$45.25</Price>
+        <Image>https://m.media-amazon.com/images/I/81TTmyqWoWL._AC_UF1000,1000_QL80_.jpg</Image>
+       <Description>Imprisoned by the very monsters he vowed to destroy, the last silversaint is forced to tell his story. A story of legendary battles and forbidden love, of faith lost and friendships won, of the Wars of the Blood and the Forever King and the quest for humanity’s last remaining hope:
+
+The Holy Grail.
+</Description> 
+    </Book>
+
+    <Book>
+        <Title>Empire of the Damned</Title>
+        <Author>Jay Kristoff</Author>
+        <ISBN>978-0262033848</ISBN>
+        <PublicationYear>
+		   <Year>2024</Year>
+		   <Date>10/02</Date>
+		</PublicationYear>
+        <Genre>Literature</Genre>
+		<BestSeller>true</BestSeller>
+        <Price>$45.25</Price>
+        <Image>https://m.media-amazon.com/images/I/91pVVvIdZYL._AC_UF894,1000_QL80_.jpg</Image>
+       <Description>But the last silversaint faces peril, within and without. Pursued by children of the Forever King, drawn into wars and webs centuries in the weaving, and ravaged by his own rising bloodlust, Gabriel may not survive to see the truth of the Grail revealed.
+
+A truth that may be too awful for any to imagine.
+</Description> 
+    </Book>
+
+    <Book>
+        <Title>It Starts with Us</Title>
+        <Author>Colleen Hoover</Author>
+        <ISBN>9781668001226</ISBN>
+        <PublicationYear>
+		   <Year>2022</Year>
+		   <Date>10/18</Date>
+		</PublicationYear>
+        <Genre>Romance</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$25.60</Price>
+       
+        <Image>https://m.media-amazon.com/images/I/71PNGYHykrL._AC_UF1000,1000_QL80_.jpg</Image>
+        <Description>Lily and her ex-husband, Ryle, have just settled into a civil coparenting rhythm when she suddenly bumps into her first love, Atlas, again. After nearly two years separated, she is elated that for once, time is on their side, and she immediately says yes when Atlas asks her on a date.</Description>
+    </Book>
+
+
+    <Book>
+        <Title>Hook, Line, and Sinker</Title>
+        <Author>Tessa Bailey</Author>
+        <ISBN>9780063045699</ISBN>
+        <PublicationYear>
+		   <Year>2019</Year>
+		   <Date>06/11</Date>
+		</PublicationYear>
+        <Genre>Romance</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$17.60</Price>
+       
+        <Image>https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1627068858l/58283080.jpg</Image>
+        <Description>King crab fisherman Fox Thornton has a reputation as a sexy, carefree flirt. Everyone knows he's a guaranteed good time--in bed and out--and that's exactly how he prefers it. Until he meets Hannah Bellinger. She's immune to his charm and looks, but she seems to enjoy his... personality? And wants to be friends? Bizarre. But he likes her too much to risk a fling, so platonic pals it is.</Description>
+    </Book>
+
+
+    <Book>
+        <Title>It Ends With Us </Title>
+        <Author>Colleen Hoover</Author>
+        <ISBN>9781471156267</ISBN>
+        <PublicationYear>
+		   <Year>2016</Year>
+		   <Date>02/06</Date>
+		</PublicationYear>
+        <Genre>Romance</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$07.60</Price>
+       
+        <Image>https://files.elastik.mu/files/editionsdeloceanindien/erp/items/8EFCE313-55E5-CE19-567A-2F1E4FC6211E/81PdOsc95OL.jpg</Image>
+        <Description>ily hasn't always had it easy, but that's never stopped her from working hard for the life she wants. She's come a long way from the small town in Maine where she grew up - she graduated from college, moved to Boston, and started her own business. So when she feels a spark with a gorgeous neurosurgeon named Ryle Kincaid, everything in Lily's life suddenly seems almost too good to be true.</Description>
+    </Book>
+
+    <Book>
+        <Title>The Seven Husbands of Evelyn Hugo</Title>
+        <Author>Taylor Jenkins Reid</Author>
+        <ISBN>9781398515697</ISBN>
+        <PublicationYear>
+		   <Year>2021</Year>
+		   <Date>14/10</Date>
+		</PublicationYear>
+        <Genre>Romance</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$235.60</Price>
+       
+        <Image>https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1664458703i/32620332.jpg</Image>
+        <Description>Aging and reclusive Hollywood movie icon Evelyn Hugo is finally ready to tell the truth about her glamorous and scandalous life. But when she chooses unknown magazine reporter Monique Grant for the job, no one is more astounded than Monique herself. Why her? Why now?</Description>
+    </Book>
+
+    <Book>
+        <Title>Beyond the Wall: East Germany, 1949-1990</Title>
+        <Author>Katja Hoyer</Author>
+        <ISBN>9780141999340</ISBN>
+        <PublicationYear>
+		   <Year>2024</Year>
+		   <Date>07/03</Date>
+		</PublicationYear>
+        <Genre>Non-fiction</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$15.60</Price>
+       
+        <Image>https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1677147473i/61403418.jpg</Image>
+        <Description>In 1990, a country disappeared. When the iron curtain fell, East Germany simply ceased to be. For over forty years, from the ruin of the Second World War to the cusp of a new millennium, the GDR presented a radically different German identity to anything that had come before, and anything that exists today.</Description>
+    </Book>
+
+    <Book>
+        <Title>The Trading Game: A Confession</Title>
+        <Author>Gary Stevenson</Author>
+        <ISBN>9781529062335</ISBN>
+        <PublicationYear>
+		   <Year>2024</Year>
+		   <Date>05/03</Date>
+		</PublicationYear>
+        <Genre>Non-fiction</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$25.60</Price>
+       
+        <Image>https://housmans.com/wp-content/uploads/2024/03/9780241636602.jpg</Image>
+        <Description>An outrageous, white-knuckle journey to the dark heart of an intoxicating world - from someone who survived the trading game and then blew it all wide open</Description>
+    </Book>
+
+    <Book>
+        <Title>Strong Female Character</Title>
+        <Author>Fern Brady </Author>
+        <ISBN>9781914240478</ISBN>
+        <PublicationYear> 
+			<Year>2024</Year>
+		   <Date>11/01</Date>
+		</PublicationYear>
+        <Genre>Humor</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$35.60</Price>
+       
+        <Image>https://m.media-amazon.com/images/I/91JbnB93QeL._AC_UF1000,1000_QL80_.jpg</Image>
+        <Description>Exploring class, mental health, societal pressures and individual ambition, Strong Female Character is a candid and groundbreaking memoir of neurodiversity, sexism and defying expectations.</Description>
+    </Book>
+
+    <Book>
+        <Title>Diddly Squat: Pigs Might Fly</Title>
+        <Author>Jeremy Clarkson</Author>
+        <ISBN>9780241674895</ISBN>
+        <PublicationYear>
+			<Year>2023</Year>
+		   <Date>10/26</Date>
+		</PublicationYear>
+        <Genre>Humor</Genre>
+		<BestSeller>true</BestSeller>
+        <Price>$16.60</Price>
+       
+        <Image>https://cdn.penguin.co.uk/dam-assets/books/9780241674895/9780241674895-jacket-large.jpg</Image>
+        <Description>Welcome back to Clarkson's Farm. Since taking the wheel three years ago Jeremy's had his work cut out. And it's now clear from hard-won experience that, when it comes to farming, there's only one golden rule:Whatever you hope will happen, won't.</Description>
+    </Book>
+ 
+    <Book>
+        <Title>Diddly Squat: Til The Cows Come Home</Title>
+        <Author>Jeremy Clarksonn</Author>
+        <ISBN>9781405954631</ISBN>
+        <PublicationYear>
+		  <Year>2023</Year>
+		   <Date>11/05</Date>
+		</PublicationYear>
+        <Genre>Humor</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$10.99</Price>
+       
+        <Image>https://m.media-amazon.com/images/I/81YUYjbr-2L._AC_UF1000,1000_QL80_.jpg</Image>
+        <Description>The seeds are being sown, the soil turned, the farm shop restocked - that's right, it's time for another riotous trip to Diddly Squat Farm with farmer-in-progress Jeremy Clarkson . . .</Description>
+    </Book>
+
+    <Book>
+        <Title>Magisteria: The Entangled Histories of Science and Religion</Title>
+        <Author>Nicholas Spencer </Author>
+        <ISBN>9780861547302</ISBN>
+        <PublicationYear>	   
+			<Year>2024</Year>
+		   <Date>11/01</Date>
+		</PublicationYear>
+        <Genre>Non-fiction</Genre>
+	<BestSeller>false</BestSeller>
+        <Price>$11.60</Price>
+             
+<Image>https://i.grassets.com/images/S/compressed.photo.goodreads.com/books/1673299107l/61272648.jpg</Image>
+        <Description>From eighth-century Baghdad to the frontiers of AI today, via medieval Europe, nineteenth-century India and Soviet Russia, Magisteria sheds new light on this complex historical landscape. Rejecting the thesis that science and religion are inevitably at war, Nicholas Spencer illuminates a compelling and troubled relationship that has definitively shaped human history.</Description>
+    </Book>
+
+     <Book>
+        <Title>Laws of UX: Using Psychology to Design Better Products and Services</Title>
+        <Author>Jon Yablonski </Author>
+        <ISBN>9781492055310</ISBN>
+        <PublicationYear>
+		   <Year>2020</Year>
+		   <Date>01/05</Date>
+		</PublicationYear>
+        <Genre>Education</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$235.60</Price>
+       
+        <Image>https://m.media-amazon.com/images/I/714y4gr3IRL._AC_UF1000,1000_QL80_.jpg</Image>
+        <Description>An understanding of psychology-specifically the psychology behind how users behave and interact with digital interfaces-is perhaps the single most valuable nondesign skill a designer can have.</Description>
+    </Book>
+
+    <Book>
+        <Title>SHOGUN</Title>
+        <Author>James Clavell</Author>
+        <ISBN>9781529062335</ISBN>
+        <PublicationYear>
+		   <Year>1999</Year>
+		   <Date>02/12</Date>
+		</PublicationYear>
+        <Genre>Literature</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$15.60</Price>
+       
+        <Image>https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1704385704i/52382796.jpg</Image>
+        <Description>Starting with his shipwreck on this most alien of shores, the novel charts Blackthorne's rise from the status of reviled foreigner up to the hights of trusted advisor and eventually, Samurai. All as civil war looms over the fragile country.</Description>
+    </Book>
+
+    <Book>
+        <Title>Gone Girl</Title>
+        <Author>Gillian Flynn</Author>
+        <ISBN> 9780753827666</ISBN>
+        <PublicationYear>
+		   <Year>2013</Year>
+		   <Date>03/01</Date>
+		</PublicationYear>
+        <Genre>Romance</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$20.60</Price>
+       
+        <Image>https://m.media-amazon.com/images/I/71+khXHbe5L._AC_UF1000,1000_QL80_.jpg</Image>
+        <Description>Alternating between the present-day narrative of husband Nick Dunne and the past diary entries of his wife Amy, we learn their previously perfect marriage has come undone following a move from New York to semi-rural Missouri. Amy inexplicably disappears without trace, apparently pregnant; Nick, whose emotions seem to betray little outward signs of grief or worry, is the prime suspect. However, is all that we read the truth? Is Amy genuinely missing, and, if not, what could be her possible motive?</Description>
+    </Book>
+
+    <Book>
+        <Title>Sharp Objects</Title>
+        <Author>Gillian Flynn</Author>
+        <ISBN> 9780753822210</ISBN>
+        <PublicationYear>
+			<Year>2010</Year>
+		   <Date>10/06</Date>
+		</PublicationYear>
+        <Genre>Young adult</Genre>
+		<BestSeller>false</BestSeller>
+        <Price>$20.60</Price>
+       
+        <Image>https://i.grassets.com/images/S/compressed.photo.goodreads.com/books/1475695315l/18045891.jpg</Image>
+        <Description>When two girls are abducted and killed in Missouri, journalist Camille Preaker is sent back to her home town to report on the crimes. Long-haunted by a childhood tragedy and estranged from her mother for years, Camille suddenly finds herself installed once again in her family's mansion, reacquainting herself with her distant mother and the half-sister she barely knows - a precocious 13-year-old who holds a disquieting grip on the town.</Description>
+    </Book>
+    <!-- More book entries with the <Image> element -->
+</BookList>
