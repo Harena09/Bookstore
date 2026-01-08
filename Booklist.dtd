@@ -1,0 +1,22 @@
+
+<!ELEMENT BookList (Book*)>
+    
+<!ELEMENT Book (Title, Author+, ISBN, PublicationYear, Genre+, Price, Image, Description, BestSeller?)>
+    
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT PublicationYear (YEAR,DATE*)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
+<!ELEMENT Image (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+<!ELEMENT BestSeller (#PCDATA)>
+<!ELEMENT YEAR (#PCDATA)>
+<!ELEMENT DATE (#PCDATA)>
+<!ENTITY % currency "(USD)">
+<!ATTLIST BookList
+    xmlns CDATA #FIXED 'http://www.example.com/booklist'
+    xmlns:xsi CDATA #FIXED 'http://www.w3.org/2001/XMLSchema-instance'>
+
+ 
